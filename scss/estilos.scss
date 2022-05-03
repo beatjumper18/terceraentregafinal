@@ -1,0 +1,250 @@
+
+$animacion-ofertas: 1s;
+$animacion-hover: scale(1.1);
+$color-black: rgb(238, 71, 71);;
+
+@mixin prueba {
+    margin: 10px;
+    padding: 10px;
+    background-color:white;
+    border: 2px solid red;
+}
+
+%extension{
+    text-align: center;
+    background-color: rgb(228, 44, 44);
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-areas: "header header header header"
+                         "main main main main"
+                         "main main main main"
+                         "footer footer footer footer";
+}
+
+.encabezado{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    background-color: $color-black;
+    padding-top: 10px;
+
+    .logo{
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 10px;
+    }
+
+    .testing {
+            
+    .prueba:hover {
+        text-decoration: none;
+        list-style: none;
+        color: antiquewhite;
+        font-family: 'Roboto', sans-serif; 
+        background-color: #ef3c3c;
+    }
+    }
+  
+
+
+    }
+
+main{
+    grid-area: main;
+    background-color: $color-black;
+
+    h1{
+    @extend %extension;
+    margin: 0px;
+    }
+
+    .imagenIndex{
+        text-align: center;
+        margin: 0px;
+    }
+
+    .tituloOfertas{
+        @extend %extension;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .ofertas{
+        text-align: center;
+        margin: 15px;
+        .n1{
+            margin: 6px;
+            transition: $animacion-ofertas;
+            &:hover{ 
+                transform: $animacion-hover;
+            }
+        }
+        .n2{
+            margin: 6px;
+            transition: $animacion-ofertas;
+            &:hover{ 
+                transform: $animacion-hover;
+            }
+        }
+        .n3{
+            margin: 6px;
+            transition: $animacion-ofertas;
+            &:hover{ 
+                transform: $animacion-hover;
+            }
+        }
+        .n4{
+            margin: 6px;
+            transition: $animacion-ofertas;
+            &:hover{ 
+                transform: $animacion-hover;
+            }
+        }
+    }
+
+    .listaP{
+        grid-area: main;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        color: antiquewhite;
+        font-family: 'Roboto', sans-serif;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .productosVista{
+        grid-area: main;
+        text-align: center;
+
+                .productoA{
+                    @include prueba;
+                        }
+                .productoB{
+                    @include prueba;
+                        }
+
+                .productoC{
+                    @include prueba;
+                        }
+
+                .productoD{
+                    @include prueba;
+                         }
+
+                .productoE{
+                    @include prueba;
+                        }
+
+                .productoF{
+                    @include prueba;
+                        }
+
+                .productoG{
+                    @include prueba;
+                        }
+
+                .productoH{
+                    @include prueba;
+                        }
+                             }
+    .textServ{
+        grid-area: main;
+        text-align: center;
+        color: antiquewhite;
+        font-family: 'Roboto', sans-serif;
+        margin: 10px;
+    }
+
+    .videoServ{
+        grid-area: main;
+        text-align: center;  
+        iframe{
+        @media (max-width: 412px) {
+            width: 80%;}
+          }
+    }
+
+    .videoDos{
+        grid-area: main;
+        text-align: center;
+        iframe{
+            @media (max-width: 412px) {
+                width: 80%;}
+              }
+    }
+
+    .textDos{
+        grid-area: main;
+        text-align: center;
+        color: antiquewhite;
+        font-family: 'Roboto', sans-serif;
+        margin: 10px;
+    }
+
+    .textTres{
+        grid-area: main;
+        text-align: center;
+        color: antiquewhite;
+        font-family: 'Roboto', sans-serif;
+        margin: 10px;
+    }
+
+    .galeria{
+        grid-area: main;
+        text-align: center;
+        margin: 10px; 
+        img{
+            margin: 10px;
+            @media (max-width: 768px) {
+                width: 80%;
+              }
+        }
+    }
+
+    .formulario{
+        grid-area: main;
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background-color: white;
+        form{
+            label{
+                margin: 10px;
+            }
+        }
+    }
+
+    }
+          
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 44, 44);
+    color: antiquewhite;
+    padding: 5px;
+    p{
+        font-size: 15px;
+        margin: 2px;
+        font-family: 'Roboto', sans-serif;
+    }
+}

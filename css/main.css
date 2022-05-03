@@ -1,0 +1,183 @@
+main h1, main .tituloOfertas {
+  text-align: center;
+  background-color: #e42c2c;
+  color: antiquewhite;
+  font-family: 'Roboto', sans-serif; }
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.contenedor {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-areas: "header header header header" "main main main main" "main main main main" "footer footer footer footer"; }
+
+.encabezado {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  background-color: #ee4747;
+  padding-top: 10px; }
+  .encabezado .logo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+  .encabezado .testing .prueba:hover {
+    text-decoration: none;
+    list-style: none;
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ef3c3c; }
+
+main {
+  grid-area: main;
+  background-color: #ee4747; }
+  main h1 {
+    margin: 0px; }
+  main .imagenIndex {
+    text-align: center;
+    margin: 0px; }
+  main .tituloOfertas {
+    padding: 10px;
+    font-size: 25px; }
+  main .ofertas {
+    text-align: center;
+    margin: 15px; }
+    main .ofertas .n1 {
+      margin: 6px;
+      transition: 1s; }
+      main .ofertas .n1:hover {
+        transform: scale(1.1); }
+    main .ofertas .n2 {
+      margin: 6px;
+      transition: 1s; }
+      main .ofertas .n2:hover {
+        transform: scale(1.1); }
+    main .ofertas .n3 {
+      margin: 6px;
+      transition: 1s; }
+      main .ofertas .n3:hover {
+        transform: scale(1.1); }
+    main .ofertas .n4 {
+      margin: 6px;
+      transition: 1s; }
+      main .ofertas .n4:hover {
+        transform: scale(1.1); }
+  main .listaP {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    font-size: 20px; }
+  main .productosVista {
+    grid-area: main;
+    text-align: center; }
+    main .productosVista .productoA {
+      margin: 10px;
+      padding: 10px;
+      background-color: white;
+      border: 2px solid red; }
+    main .productosVista .productoB {
+      margin: 10px;
+      padding: 10px;
+      background-color: white;
+      border: 2px solid red; }
+    main .productosVista .productoC {
+      margin: 10px;
+      padding: 10px;
+      background-color: white;
+      border: 2px solid red; }
+    main .productosVista .productoD {
+      margin: 10px;
+      padding: 10px;
+      background-color: white;
+      border: 2px solid red; }
+    main .productosVista .productoE {
+      margin: 10px;
+      padding: 10px;
+      background-color: white;
+      border: 2px solid red; }
+    main .productosVista .productoF {
+      margin: 10px;
+      padding: 10px;
+      background-color: white;
+      border: 2px solid red; }
+    main .productosVista .productoG {
+      margin: 10px;
+      padding: 10px;
+      background-color: white;
+      border: 2px solid red; }
+    main .productosVista .productoH {
+      margin: 10px;
+      padding: 10px;
+      background-color: white;
+      border: 2px solid red; }
+  main .textServ {
+    grid-area: main;
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px; }
+  main .videoServ {
+    grid-area: main;
+    text-align: center; }
+    @media (max-width: 412px) {
+      main .videoServ iframe {
+        width: 80%; } }
+  main .videoDos {
+    grid-area: main;
+    text-align: center; }
+    @media (max-width: 412px) {
+      main .videoDos iframe {
+        width: 80%; } }
+  main .textDos {
+    grid-area: main;
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px; }
+  main .textTres {
+    grid-area: main;
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px; }
+  main .galeria {
+    grid-area: main;
+    text-align: center;
+    margin: 10px; }
+    main .galeria img {
+      margin: 10px; }
+      @media (max-width: 768px) {
+        main .galeria img {
+          width: 80%; } }
+  main .formulario {
+    grid-area: main;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: white; }
+    main .formulario form label {
+      margin: 10px; }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  background-color: #e42c2c;
+  color: antiquewhite;
+  padding: 5px; }
+  footer p {
+    font-size: 15px;
+    margin: 2px;
+    font-family: 'Roboto', sans-serif; }
